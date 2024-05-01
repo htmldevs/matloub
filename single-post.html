@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--======== Title & Favicon ========-->
-    <title>Matloub | Home</title>
+    <title>Matloub | Post</title>
     <link rel="shortcut icon" href="./assets/img/favicon.jpg" type="image/x-icon">
     <!--======== CSS ========-->
     <link href="./assets/css/simplebar.min.css" rel="stylesheet">
@@ -139,19 +139,12 @@
             <!-- Main Content -->
             <div class="main-content flex-1" data-simplebar>
                 <div class="home-content">
-                    <div class="home-banner">
-                        <img class="w-100" src="./assets/img/banner.jpg" alt="">
+                    <div class="post-meta">
+                        <a href="./index.html" class="back-btn d-inline-flex align-items-center mb-30">
+                            <img src="./assets/img/icons/arrow-left.svg" alt="">
+                        </a>
                     </div>
-                    <div class="post-meta mt-30">
-                        <ul>
-                            <li class="active"><img src="./assets/img/icons/location.svg" alt=""> Near Me</li>
-                            <li><img src="./assets/img/icons/img.svg" alt=""> Choose on the Map</li>
-                            <li><img src="./assets/img/icons/map.svg" alt=""> All Regions</li>
-                        </ul>
-                    </div>
-                    <h3 class="mt-40">Today's Talabat</h3>
-                    <!-- POST WRAPPER -->
-                    <div class="post-wrapper d-flex flex-column gap-3">
+                    <div class="post-wrapper d-flex flex-column gap-2">
                         <!-- Single Item -->
                         <div class="post-item d-flex flex-column gap-3">
                             <div class="post-header d-flex align-items-center gap-3">
@@ -177,85 +170,50 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- Single Item -->
-                        <div class="post-item d-flex flex-column gap-3">
-                            <div class="post-header d-flex align-items-center gap-3">
-                                <img src="./assets/img/author.png" alt="">
-                                <div class="author-meta flex-1">
-                                    <h6 class="mb-1">Hacen Designer</h6>
-                                    <ul class="d-none d-md-flex gap-4">
-                                        <li class="text-theme"> <img src="./assets/img/icons/link.svg" alt="">Computers</li>
-                                        <li><img src="./assets/img/icons/map.svg" alt=""> Saudi Arabia, Al Riyadh</li>
-                                    </ul>
+                        <!-- Post Comment -->
+                        <div class="post-comment-box">
+                            <h4 class="mb-20 fw-medium">All Comments</h4>
+                            <div class="d-flex flex-column gap-4">
+                                <!-- item -->
+                                <div class="comment-item d-flex gap-4">
+                                    <img src="./assets/img/author-1.png" alt="">
+                                    <div class="comment-text-box flex-1">
+                                        <div class="cm-header d-flex align-items-center">
+                                            <h6 class="mb-0 flex-1">Karima</h6>
+                                            <div class="cm-action d-flex align-items-center gap-3">
+                                                <a href="#"><img src="./assets/img/icons/call.svg" alt=""></a>
+                                                <a href="#"><img src="./assets/img/icons/message.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="cm-body mt-2 pb-3">
+                                            متوفر Macbook Pro نفس المواصفات لكن 13” وليس 16”، بقيمة 1500ريال
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-action d-flex align-items-center gap-4">
-                                    <span class="fw-medium">1h Ago</span>
-                                    <button><img src="./assets/img/icons/dots.svg" alt=""></button>
+                                <!-- item -->
+                                <div class="comment-item d-flex gap-4">
+                                    <img src="./assets/img/author-2.png" alt="">
+                                    <div class="comment-text-box flex-1">
+                                        <div class="cm-header d-flex align-items-center">
+                                            <h6 class="mb-0 flex-1"> Salma</h6>
+                                            <div class="cm-action d-flex align-items-center gap-3">
+                                                <a href="#"><img src="./assets/img/icons/call.svg" alt=""></a>
+                                                <a href="#"><img src="./assets/img/icons/message.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="cm-body mt-2 pb-3">
+                                            متوفر Macbook Pro نفس المواصفات بقيمة 1900ريال
+                                            <div class="mt-10">
+                                                <img src="./assets/img/laptop.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-body">
-                                <p>مطلوب كمبيوتر Macbook Pro 16” 256gb 16GB بكل أغراضه في الرياض السعودية</p>
-                            </div>
-                            <div class="post-footer">
-                                <a href="#" class="d-flex align-items-center gap-2 text-theme">
-                                    <img src="./assets/img/icons/comment.svg" alt=""> 17 comments
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <div class="post-item d-flex flex-column gap-3">
-                            <div class="post-header d-flex align-items-center gap-3">
-                                <img src="./assets/img/author.png" alt="">
-                                <div class="author-meta flex-1">
-                                    <h6 class="mb-1">Hacen Designer</h6>
-                                    <ul class="d-none d-md-flex gap-4">
-                                        <li class="text-theme"> <img src="./assets/img/icons/link.svg" alt="">Computers</li>
-                                        <li><img src="./assets/img/icons/map.svg" alt=""> Saudi Arabia, Al Riyadh</li>
-                                    </ul>
+                                <div class="comment-form position-relative mt-20 mt-xs-10">
+                                    <img class="el-absolute center-right zindex-2" src="./assets/img/icons/add-img.svg" alt="">
+                                    <input type="text" placeholder="Write your comment">
                                 </div>
-                                <div class="post-action d-flex align-items-center gap-4">
-                                    <span class="fw-medium">1h Ago</span>
-                                    <button><img src="./assets/img/icons/dots.svg" alt=""></button>
-                                </div>
-                            </div>
-                            <div class="post-body">
-                                <p>مطلوب كمبيوتر Macbook Pro 16” 256gb 16GB بكل أغراضه في الرياض السعودية</p>
-                            </div>
-                            <div class="post-footer">
-                                <a href="#" class="d-flex align-items-center gap-2 text-theme">
-                                    <img src="./assets/img/icons/comment.svg" alt=""> 17 comments
-                                </a>
-                            </div>
-                        </div>
 
-                        <!-- IMAGE BANNER -->
-                        <div class="home-banner">
-                            <img class="w-100" src="./assets/img/banner-2.jpg" alt="">
-                        </div>
-
-                        <!-- Single Item -->
-                        <div class="post-item d-flex flex-column gap-3">
-                            <div class="post-header d-flex align-items-center gap-3">
-                                <img src="./assets/img/author.png" alt="">
-                                <div class="author-meta flex-1">
-                                    <h6 class="mb-1">Hacen Designer</h6>
-                                    <ul class="d-none d-md-flex gap-4">
-                                        <li class="text-theme"> <img src="./assets/img/icons/link.svg" alt="">Computers</li>
-                                        <li><img src="./assets/img/icons/map.svg" alt=""> Saudi Arabia, Al Riyadh</li>
-                                    </ul>
-                                </div>
-                                <div class="post-action d-flex align-items-center gap-4">
-                                    <span class="fw-medium">1h Ago</span>
-                                    <button><img src="./assets/img/icons/dots.svg" alt=""></button>
-                                </div>
-                            </div>
-                            <div class="post-body">
-                                <p>مطلوب كمبيوتر Macbook Pro 16” 256gb 16GB بكل أغراضه في الرياض السعودية</p>
-                            </div>
-                            <div class="post-footer">
-                                <a href="#" class="d-flex align-items-center gap-2 text-theme">
-                                    <img src="./assets/img/icons/comment.svg" alt=""> 17 comments
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -264,53 +222,53 @@
 
             <!-- RIGHT SIDEBAR -->
             <div class="right-sidebar d-none d-xl-block">
-                <h3 class="mb-20">Categories</h3>
+                <h3>Categories</h3>
                 <div class="categorie-suggest text-center">
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/vehicles.png" alt="">
                         <span class="d-block fw-semibold mt-1">Vehicles</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/garden.png" alt="">
                         <span class="d-block fw-semibold mt-1">Garden</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/clothing.png" alt="">
                         <span class="d-block fw-semibold mt-1">Apparel</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/furniture.png" alt="">
                         <span class="d-block fw-semibold mt-1">Furniture</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/beauty.png" alt="">
                         <span class="d-block fw-semibold mt-1">Beauty</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/sports.png" alt="">
                         <span class="d-block fw-semibold mt-1">Sport</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/toys.png" alt="">
                         <span class="d-block fw-semibold mt-1">Toys</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/kitchen.png" alt="">
                         <span class="d-block fw-semibold mt-1">Kitchen</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/decoration.png" alt="">
                         <span class="d-block fw-semibold mt-1">Decoration</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/phones.png" alt="">
                         <span class="d-block fw-semibold mt-1">Phones</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/jewelry.png" alt="">
                         <span class="d-block fw-semibold mt-1">Jewelry</span>
                     </a>
-                    <a href="./single-categories.html" class="d-block">
+                    <a href="./categories-post.html" class="d-block">
                         <img src="./assets/img/categories/computer.png" alt="">
                         <span class="d-block fw-semibold mt-1">Computers</span>
                     </a>

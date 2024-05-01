@@ -49,16 +49,16 @@ h1 {
    font-size: 60px;
 }
 h2 {
-   font-size: 36px;
-}
-h3 {
    font-size: 32px;
 }
+h3 {
+   font-size: 28px;
+}
 h4 {
-   font-size: 26px;
+   font-size: 22px;
 }
 h5 {
-   font-size: 24px;
+   font-size: 20px;
 }
 h6 {
    font-size: 18px;
@@ -117,11 +117,12 @@ input, textarea {
    color: var(--black-color);
    background-color: var(--gray-color);
    transition: .3s;
-   border: 0;
+   border: 1px solid transparent;
    border-radius: 50px;
 }
 input:focus, textarea:focus {
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+   border: 1px solid var(--theme-color);
 }
 textarea {
 	min-height: 100px;
@@ -556,25 +557,24 @@ textarea {
 	max-width: 1.5em;
 }
 
-
 /* CATEGORIES */
-.categories-box {
-  margin: 0 -15px;
+.categorie-suggest {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+   font-size: 18px;
 }
-.categories-box a {
-  width: 33.333%;
-  padding: 7.5px 15px;
+.categorie-suggest img {
+   min-width: 4.4em;
+   width: 4.4em;
+   height: 4.4em;
+   object-fit: cover;
+   border-radius: 50%;
 }
-.categories-box a img {
-	min-width: 4.3em;
-	max-width: 4.3em;
-	height: 4.3em;
-	object-fit: cover;
-	border-radius: 50%;
+.categorie-suggest span {
+   font-size: 0.83em;
 }
-.categories-box a span {
-   font-size: 0.85em;
-}
+
 
 /* ==========================
    HOME PAGE
@@ -582,28 +582,6 @@ textarea {
 .home-banner img {
    border-radius: 12px;
 }
-.post-meta ul li {
-  display: flex;
-  align-items: center;
-  background-color: var(--gray-color);
-  padding: 0.8em 1.5em;
-  border-radius: 10px;
-  gap: 15px;
-  cursor: pointer;
-  transition: .3s;
-}
-.post-meta ul li img {
-	max-width: 1.5em;
-}
-.post-meta ul li.active {
-  background-color: var(--theme-color);
-  color: var(--white-color);
-}
-.post-meta ul li.active img {
-	filter: brightness(0) invert(1);
-}
-
-
 .post-item {
 	border: 1px solid #ECECEC;
 	border-radius: 15px;
@@ -630,8 +608,6 @@ textarea {
 	padding: 1em;
 	margin: 0 -1em;
 }
-
-
 .author-meta ul li {
   display: flex;
   align-items: center;
@@ -640,6 +616,31 @@ textarea {
 }
 .author-meta ul li img {
   max-width: 1.2em;
+}
+
+.post-meta ul li {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--gray-color);
+  padding: 0.8em;
+  border-radius: 12px;
+  margin: 5px 5px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.post-meta ul li.active {
+   color: var(--white-color);
+   background-color: var(--theme-color);
+}
+.post-meta ul {
+  margin: 0 -5px;
+}
+.post-meta ul li img {
+   max-width: 1.5em;
+   margin-right: 0.5em;
+}
+.post-meta ul li.active img {
+   filter: brightness(0) invert(1);
 }
 
 
@@ -783,4 +784,116 @@ textarea {
 .sidebar-copyright {
 	font-size: 14px;
 	color: #000;
+}
+
+
+/* ==========================
+   CATEGORIES PAGE
+============================= */
+.cpr-0 {
+	padding-right: 0;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 30px;
+}
+.categories a img {
+  max-width: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.back-btn {
+	font-size: 36px;
+	font-weight: 600;
+	margin-left: -45px;
+   gap: 0.84em;
+}
+.back-btn img {
+   max-width: 0.55em;
+}
+.right-sidebar > h3 {
+	font-size: 28px;
+}
+
+
+
+
+/* ==========================
+   SINGLE-POST PAGE
+============================= */
+.post-comment-box {
+	border: 1px solid #ECECEC;
+	padding: 1.5em;
+	border-radius: 15px;
+}
+.comment-text-box {
+	border: 1px solid #ECECEC;
+	border-radius: 10px;
+	padding: 1em;
+}
+.comment-item > img {
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.comment-form img {
+	margin-right: 2em;
+   cursor: pointer;
+}
+.comment-form input {
+   padding-left: 2em;
+   padding-right: 4em;
+}
+
+
+/* ==========================
+   POST PAGE
+============================= */
+
+.post-form label span {
+	color: #FFC700;
+}
+.post-form input {
+	border-radius: 12px;
+}
+.post-form .nice-select {
+	float: none;
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 12px;
+	background-color: var(--gray-color);
+	border: 0;
+	line-height: 1;
+	height: auto;
+	padding: 1.3em 1em;
+}
+.post-form .nice-select > span {
+	opacity: 0.5;
+}
+.post-form .nice-select ul.list {
+   width: 100%;
+}
+.post-form .nice-select::after {
+   width: 8px;
+   height: 8px;
+   right: 1.5em;
+}
+
+.post-form a {
+  background-color: var(--theme-color);
+  width: 100%;
+  color: var(--white-color);
+  border-radius: 12px;
+  padding: 1em;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+}
+.post-form a:hover {
+  background-color: var(--black-color);
 }

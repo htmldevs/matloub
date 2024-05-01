@@ -43,6 +43,15 @@
       padding: 30px 20px 30px 30px;
       height: 88vh;
    }
+   .categories {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+   }
+   .categories a img {
+      max-width: 120px;
+      width: 120px;
+      height: 120px;
+   }
 }
 
 /*========== LG + MD : BETWEEN 768PX TO 1199PX. ==========*/
@@ -84,17 +93,18 @@
 	width: 220px;
 	padding: 20px 20px 0 0;
 }
-.post-meta ul li {
-   padding: 0.8em 1em;
-   gap: 5px;
-}
 .post-header > img {
    max-width: 3.5em;
 }
 .header-right {
 	gap: 20px !important;
 }
-
+.back-btn {
+	font-size: 28px;
+	font-weight: 600;
+	margin-left: 0;
+	gap: 0.84em;
+}
 }
 
 /*========== LG-DESKTOP : BETWEEN 992PX TO 1199px. ==========*/
@@ -120,6 +130,21 @@
    .author-meta ul li {
       font-size: 11px;
    }
+   .categorie-suggest img {
+      font-size: 10px;
+   }
+   .categories {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+   }
+   .categories a img {
+      max-width: 120px;
+      width: 120px;
+      height: 120px;
+   }
+   .categorie-suggest {
+      grid-template-columns: repeat(3, 1fr);
+   }
 }
 
 /*========== MD-TABLET : BETWEEN 768PX TO 991PX ==========*/
@@ -138,7 +163,15 @@
    .search-btn img {
       left: 1em;
    }
-
+   .categories {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+   }
+   .categories a img {
+      max-width: 90px;
+      width: 90px;
+      height: 90px;
+   }
 }
  
 /*========== SMALL MOBILE : SMALLER THEN 767PX ==========*/
@@ -148,7 +181,7 @@
       font-size: 32px;
    }
    h2 {
-      font-size: 32px;
+      font-size: 26px;
    }
    h3 {
       font-size: 26px;
@@ -194,15 +227,6 @@
 	height: 100%;
    overflow: auto;
 }
-.post-meta ul li {
-	margin-bottom: 10px;
-}
-.post-meta ul li:last-child {
-	margin-bottom: 0;
-}
-.post-meta ul li {
-	gap: 10px;
-}
 .right-sidebar {
 	padding: 0;
 }
@@ -212,6 +236,35 @@
 }
 .post-item {
 	padding: 1em;
+}
+
+
+.back-btn {
+	font-size: 26px;
+	margin-left: 0;
+   gap: 0.50em;
+}
+
+
+.categories {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.categories a img {
+	width: 95px;
+	height: 95px;
+}
+.post-comment-box h5 {
+	font-size: 20px;
+}
+.post-comment-box {
+	padding: 1em;
+}
+.comment-text-box {
+	padding: 0.7em;
+}
+.post-form .nice-select {
+	padding: 1.1em 1em;
 }
 
 }
