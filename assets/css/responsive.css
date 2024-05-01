@@ -4,20 +4,14 @@
     .container {
        max-width: 1120px;
     }
-    h1 {
-       font-size: 52px;
-    }
     h2 {
-       font-size: 30px;
+      font-size: 28px;
     }
     h3 {
-       font-size: 26px;
+      font-size: 26px;
     }
     h4 {
-       font-size: 25px;
-    }
-    h5 {
-       font-size: 20px;
+      font-size: 20px;
     }
     h6 {
        font-size: 16px;
@@ -52,6 +46,12 @@
       width: 120px;
       height: 120px;
    }
+   .post-success img {
+      max-width: 300px;
+   }
+   .back-btn {
+      font-size: 28px;
+   }
 }
 
 /*========== LG + MD : BETWEEN 768PX TO 1199PX. ==========*/
@@ -61,16 +61,16 @@
        font-size: 40px;
     }
     h2 {
-       font-size: 28px;
+       font-size: 24px;
     }
     h3 {
-       font-size: 24px;
+       font-size: 22px;
     }
     h4 {
        font-size: 20px;
     }
     h5 {
-       font-size: 20px;
+       font-size: 16px;
     }
     h6 {
        font-size: 14px;
@@ -100,10 +100,16 @@
 	gap: 20px !important;
 }
 .back-btn {
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 600;
 	margin-left: 0;
 	gap: 0.84em;
+}
+.post-success img {
+   max-width: 200px;
+}
+.post-success h2 {
+   font-size: 22px;
 }
 }
 
@@ -181,10 +187,10 @@
       font-size: 32px;
    }
    h2 {
-      font-size: 26px;
+      font-size: 24px;
    }
    h3 {
-      font-size: 26px;
+      font-size: 22px;
    }
    h4 {
       font-size: 18px;
@@ -240,7 +246,7 @@
 
 
 .back-btn {
-	font-size: 26px;
+	font-size: 24px;
 	margin-left: 0;
    gap: 0.50em;
 }
@@ -265,6 +271,9 @@
 }
 .post-form .nice-select {
 	padding: 1.1em 1em;
+}
+.post-success img {
+	max-width: 200px;
 }
 
 }

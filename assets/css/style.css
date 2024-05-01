@@ -807,7 +807,7 @@ textarea {
   border-radius: 50%;
 }
 .back-btn {
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: 600;
 	margin-left: -45px;
    gap: 0.84em;
@@ -884,7 +884,7 @@ textarea {
    right: 1.5em;
 }
 
-.post-form a {
+.site-btn {
   background-color: var(--theme-color);
   width: 100%;
   color: var(--white-color);
@@ -894,6 +894,11 @@ textarea {
   display: block;
   text-align: center;
 }
-.post-form a:hover {
+.site-btn:hover {
   background-color: var(--black-color);
+}
+.post-success .site-btn {
+	display: inline-block;
+	width: auto;
+	padding: 1em 3em;
 }
