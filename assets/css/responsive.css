@@ -8,10 +8,10 @@
        font-size: 52px;
     }
     h2 {
-       font-size: 43px;
+       font-size: 30px;
     }
     h3 {
-       font-size: 36px;
+       font-size: 26px;
     }
     h4 {
        font-size: 25px;
@@ -25,6 +25,24 @@
     body {
        font-size: 15px;
     }
+
+    .logo img {
+      max-width: 200px;
+   }
+   .left-sidebar,
+   .right-sidebar {
+      width: 220px;
+   }
+   .right-sidebar {
+      padding-left: 20px;
+   }
+   .categories-box a img {
+      font-size: 14px;
+   }
+   .main-content {
+      padding: 30px 20px 30px 30px;
+      height: 88vh;
+   }
 }
 
 /*========== LG + MD : BETWEEN 768PX TO 1199PX. ==========*/
@@ -34,10 +52,10 @@
        font-size: 40px;
     }
     h2 {
-       font-size: 38px;
+       font-size: 28px;
     }
     h3 {
-       font-size: 28px;
+       font-size: 24px;
     }
     h4 {
        font-size: 20px;
@@ -51,6 +69,32 @@
     body {
        font-size: 14px;
     }
+.header-area {
+   border-width: 2px;
+	padding: 20px 0;
+   min-height: auto;
+}
+.logo img {
+	max-width: 150px;
+}
+.main-content {
+	padding: 20px 0 20px 20px;
+}
+.left-sidebar {
+	width: 220px;
+	padding: 20px 20px 0 0;
+}
+.post-meta ul li {
+   padding: 0.8em 1em;
+   gap: 5px;
+}
+.post-header > img {
+   max-width: 3.5em;
+}
+.header-right {
+	gap: 20px !important;
+}
+
 }
 
 /*========== LG-DESKTOP : BETWEEN 992PX TO 1199px. ==========*/
@@ -58,6 +102,23 @@
    /* GLOBAL */
    .container {
        max-width: 920px;
+   }
+   .right-sidebar {
+      padding-left: 30px;
+      width: 200px;
+      padding-top: 20px;
+   }
+   .categories-box a {
+      padding: 7.5px 0;
+   }
+   .post-body p {
+      font-size: 1.2em;
+   }
+   .categories-box a img {
+      font-size: 12px;
+   }
+   .author-meta ul li {
+      font-size: 11px;
    }
 }
 
@@ -67,7 +128,17 @@
    .container {
       max-width: 750px;
    }
+   .post-body p {
+      font-size: 1em;
+   }
    /* GLOBAL// */
+   .search-btn input {
+      padding-left: 3em;
+   }
+   .search-btn img {
+      left: 1em;
+   }
+
 }
  
 /*========== SMALL MOBILE : SMALLER THEN 767PX ==========*/
@@ -101,6 +172,48 @@
       font-size: 12px;
    }
    /* GLOBAL// */
+
+.header-area {
+	min-height: auto;
+	border-bottom: 2px solid var(--gray-color);
+	padding: 15px 0;
+}
+.left-sidebar {
+	display: none !important;
+}
+.logo {
+   text-align: left;
+   padding-right: 50px;
+}
+.logo > a img {
+	max-width: 150px;
+}
+
+.main-content {
+	padding: 30px 0 30px 0;
+	height: 100%;
+   overflow: auto;
+}
+.post-meta ul li {
+	margin-bottom: 10px;
+}
+.post-meta ul li:last-child {
+	margin-bottom: 0;
+}
+.post-meta ul li {
+	gap: 10px;
+}
+.right-sidebar {
+	padding: 0;
+}
+
+.post-body p {
+	font-size: 14px;
+}
+.post-item {
+	padding: 1em;
+}
+
 }
 
 /*========== LARGE MOBILE : BETWEEN 480PX TO 767PX ==========*/

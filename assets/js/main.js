@@ -8,27 +8,48 @@
 
 	// NiceSelect
 	$("select").niceSelect();
+
+	//========== Language MENU ==========>	
+	function LanguageMenu() {
+		let LangItems = document.querySelectorAll('.change_lang ul li');
+		let DisplayLang = document.querySelector('.change_lang .show_lang');
+	
+		if (LangItems.length > 0) { 
+			LangItems.forEach(Item => {
+				Item.addEventListener('click', (e) => {
+					let target = e.target;
+					if (target.outerText === "AR") {
+						document.querySelector('html').setAttribute('data-rtl', 'true');
+					} else {
+						document.querySelector('html').setAttribute('data-rtl', 'false');
+					}
+					DisplayLang.querySelector('span').textContent = target.textContent; // Set text content
+					DisplayLang.querySelector('img').src = target.querySelector('img').src; // Get src directly
+				});
+			});
+		}
+	}
+	
+	LanguageMenu();
+	
 	
 	//========== STICKY HEADER, BACK TO TOP ==========>	
 	const headerAreas = document.querySelectorAll('.header-area');
-	const scrollUp = document.querySelector('.scroll-up');
 
 	function addHeaderHeight(area) {
 		document.documentElement.style.setProperty('--header-h', `${area.clientHeight}px`);
 	}
+	
 	function handleScroll() {
 		const isSticky = window.scrollY > headerAreas[0].clientHeight;
 		
 		headerAreas.forEach(area => area.classList.toggle('sticky', isSticky));
-		scrollUp.classList.toggle('sticky', isSticky);
 	}
+	
 	window.addEventListener('resize', () => headerAreas.forEach(addHeaderHeight));
 	window.addEventListener('load', () => headerAreas.forEach(addHeaderHeight));
 	window.addEventListener('scroll', handleScroll);
-	scrollUp.addEventListener('click', () => {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	});
+	
 	//========== STICKY HEADER, BACK TO TOP// ==========>
 
 	//========== MOBILE MENU JS ==========>
