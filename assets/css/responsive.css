@@ -121,6 +121,20 @@
 	border-radius: 50%;
 	object-fit: cover;
 }
+.singup-contents {
+	width: 100%;
+	padding: 20px;
+}
+.singup-contents > img {
+	max-width: 80%;
+}
+.singup-logo {
+	left: 30px;
+	top: 20px;
+}
+.singup-logo img {
+	max-width: 150px;
+}
 }
 
 /*========== LG-DESKTOP : BETWEEN 992PX TO 1199px. ==========*/
@@ -295,6 +309,36 @@
 .profile-content > img {
 	width: 100px;
 	height: 100px;
+}
+
+
+
+.singup-area {
+	min-height: auto;
+   padding: 30px 0;
+}
+.singup-contents {
+	width: 100%;
+	padding: 100px 30px 30px 30px;
+}
+.singup-logo img {
+	max-width: 150px;
+}
+.singup-logo {
+	left: 50%;
+	top: 20px;
+	transform: translateX(-50%);
+}
+.singup-form {
+	height: auto;
+   text-align: center;
+}
+.singup-form .col-md-12 > label {
+	text-align: left;
+	display: block;
+}
+.checkbox-input {
+	text-align: left;
 }
 
 }
