@@ -51,6 +51,7 @@
    }
    .back-btn {
       font-size: 28px;
+      margin-left: 0;
    }
 }
 
@@ -110,6 +111,15 @@
 }
 .post-success h2 {
    font-size: 22px;
+}
+.select-item {
+	padding-right: 5px;
+}
+.profile-content > img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 }
 
@@ -274,6 +284,17 @@
 }
 .post-success img {
 	max-width: 200px;
+}
+.language-setting li img {
+	max-width: 6em;
+	height: 6em;
+}
+.select-item {
+	padding-right: 5px;
+}
+.profile-content > img {
+	width: 100px;
+	height: 100px;
 }
 
 }

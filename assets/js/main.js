@@ -29,9 +29,8 @@
 			});
 		}
 	}
-	
 	LanguageMenu();
-	
+
 	
 	//========== STICKY HEADER, BACK TO TOP ==========>	
 	const headerAreas = document.querySelectorAll('.header-area');
@@ -90,18 +89,18 @@
 	//========== MOBILE MENU JS end ==========>
 
 	// select sibling child
-	const selectableList = document.querySelectorAll(
-		".post-meta ul li"
-	);
-	selectableList.forEach((list) => {
-		list.addEventListener("click", () => {
-			let listParent = list.closest("ul");
-			for (let i = 0; i < listParent.children.length; i++) {
-			listParent.children[i].classList.remove("active");
-			}
-			list.classList.add("active");
+	function addActiveClass(selector) {
+		const items = document.querySelectorAll(selector);
+		items.forEach(item => {
+			item.addEventListener("click", () => {
+				const parent = item.closest("ul");
+				parent.querySelectorAll("li").forEach(child => child.classList.remove("active"));
+				item.classList.add("active");
+			});
 		});
-	});
+	}
+	addActiveClass(".post-meta ul li");
+	addActiveClass(".select-item ul li");	
 
 	// custom tab
 	tabFunc(
