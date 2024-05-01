@@ -1,0 +1,111 @@
+/*========== XL-DESKTOP : BETWEEN 1200px TO 1500PX. ==========*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+    /* GLOBAL */
+    .container {
+       max-width: 1120px;
+    }
+    h1 {
+       font-size: 52px;
+    }
+    h2 {
+       font-size: 43px;
+    }
+    h3 {
+       font-size: 36px;
+    }
+    h4 {
+       font-size: 25px;
+    }
+    h5 {
+       font-size: 20px;
+    }
+    h6 {
+       font-size: 16px;
+    }
+    body {
+       font-size: 15px;
+    }
+}
+
+/*========== LG + MD : BETWEEN 768PX TO 1199PX. ==========*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* GLOBAL */
+    h1 {
+       font-size: 40px;
+    }
+    h2 {
+       font-size: 38px;
+    }
+    h3 {
+       font-size: 28px;
+    }
+    h4 {
+       font-size: 20px;
+    }
+    h5 {
+       font-size: 20px;
+    }
+    h6 {
+       font-size: 14px;
+    }
+    body {
+       font-size: 14px;
+    }
+}
+
+/*========== LG-DESKTOP : BETWEEN 992PX TO 1199px. ==========*/
+@media (min-width: 992px) and (max-width: 1199px) {
+   /* GLOBAL */
+   .container {
+       max-width: 920px;
+   }
+}
+
+/*========== MD-TABLET : BETWEEN 768PX TO 991PX ==========*/
+ @media (min-width: 768px) and (max-width: 991px) {
+   /* GLOBAL */
+   .container {
+      max-width: 750px;
+   }
+   /* GLOBAL// */
+}
+ 
+/*========== SMALL MOBILE : SMALLER THEN 767PX ==========*/
+@media (max-width: 767px) {
+   /* GLOBAL */
+   h1 {
+      font-size: 32px;
+   }
+   h2 {
+      font-size: 32px;
+   }
+   h3 {
+      font-size: 26px;
+   }
+   h4 {
+      font-size: 18px;
+   }
+   h5 {
+      font-size: 16px;
+   }
+   h6 {
+      font-size: 14px;
+   }
+   body {
+      font-size: 14px;
+   }
+   .scroll-up {
+      font-size: 12px;
+   }
+   input, textarea {
+      font-size: 12px;
+   }
+   /* GLOBAL// */
+}
+
+/*========== LARGE MOBILE : BETWEEN 480PX TO 767PX ==========*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+       max-width: 350px;
+    }
+}
