@@ -551,6 +551,10 @@ textarea {
    opacity: 1;
    visibility: visible;
 }
+.change_lang ul li a {
+	display: inline-flex;
+	gap: 5px;
+}
 .show_lang img {
 	max-width: 1.9em;
 }

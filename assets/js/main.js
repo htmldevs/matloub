@@ -11,25 +11,25 @@
 
 	//========== Language MENU ==========>	
 	function LanguageMenu() {
-		let LangItems = document.querySelectorAll('.change_lang ul li');
-		let DisplayLang = document.querySelector('.change_lang .show_lang');
-	
+		let LangItems = document.querySelectorAll('.change_lang ul li')
+		let DisplayLang = document.querySelector('.change_lang .show_lang')
+
 		if (LangItems.length > 0) { 
 			LangItems.forEach(Item => {
 				Item.addEventListener('click', (e) => {
-					let target = e.target;
+					let target = Item
 					if (target.outerText === "AR") {
-						document.querySelector('html').setAttribute('data-rtl', 'true');
-					} else {
-						document.querySelector('html').setAttribute('data-rtl', 'false');
+						document.querySelector('html').setAttribute('data-rtl','true')
+					}else{
+						document.querySelector('html').setAttribute('data-rtl','false')
 					}
-					DisplayLang.querySelector('span').textContent = target.textContent; // Set text content
-					DisplayLang.querySelector('img').src = target.querySelector('img').src; // Get src directly
-				});
+					DisplayLang.querySelector('span').src = target.outerText
+					DisplayLang.querySelector('img').src = target.querySelector('img').src
+				})
 			});
 		}
 	}
-	LanguageMenu();
+	// LanguageMenu()
 
 	
 	//========== STICKY HEADER, BACK TO TOP ==========>	
