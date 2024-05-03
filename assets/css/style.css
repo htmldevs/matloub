@@ -550,6 +550,9 @@ textarea {
 	display: inline-flex;
 	gap: 5px;
 }
+.change_lang ul li a:hover {
+   color: var(--black-color);
+}
 .show_lang img {
 	max-width: 1.9em;
 }
