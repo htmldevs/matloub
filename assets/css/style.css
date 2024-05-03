@@ -141,11 +141,6 @@ textarea {
 [data-rtl="true"] {
    direction: rtl;
 }
-
-[data-rtl="true"] .auction-content > h3:after {
-   left: auto;
-   right: 0;
-}
 /*========== SCROLL UP ==========*/
 .scroll-up {
    position: fixed;
@@ -1079,4 +1074,14 @@ textarea {
   top: 50%;
   left: 0;
   z-index: -1;
+}
+
+
+/* RTL SUPPORT */
+[data-rtl="true"] .back-btn img {
+   transform: rotateY(190deg);
+}
+[data-rtl="true"] .post-meta ul li img {
+	margin-right: 0;
+	margin-left: 0.5em;
 }
